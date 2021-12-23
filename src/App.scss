@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Nunito+Sans:wght@300;600;800&display=swap');
+@import url('bootstrap/dist/css/bootstrap.min.css');
+
+:root {
+  // Primary colours
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+
+  // Hover
+  --strong-cyan-hover-dark: hsl(168, 68%, 36%);
+  --strong-cyan-hover-light: hsl(171, 52%, 58%);
+  --light-blue-hover-dark: hsl(233, 67%, 59%);
+  --light-blue-hover-light: hsl(233, 100%, 77%);
+
+  // Neutral colours
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-family: 'Bai Jamjuree', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+}
+
+p {
+  font-size: 0.9rem;
+}

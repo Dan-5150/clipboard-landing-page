@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
 
-function App() {
+import './App.scss';
+import HeaderSection from "./pages/HeaderSection";
+import FeaturesSection from "./pages/FeaturesSection";
+import AccessSection from "./pages/AccessSection";
+import DetailsSection from "./pages/DetailsSection";
+import CompaniesSection from "./pages/CompaniesSection";
+import AppsSection from "./pages/AppsSection";
+import Footer from "./components/Footer";
+
+const Main = styled.main`
+  text-align: center;
+  overflow-x: hidden;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <HeaderSection />
+      <DetailsSection />
+      <AccessSection />
+      <FeaturesSection />
+      <CompaniesSection />
+      <AppsSection />
+      <Footer />
+    </Main>
   );
 }
 
